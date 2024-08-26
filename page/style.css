@@ -445,6 +445,13 @@ nav .nav-items {
 
 .projects-container
   .project-bar
+  .project-dots:nth-last-child(1)
+  .project-details {
+  left: -320px;
+}
+
+.projects-container
+  .project-bar
   .project-dots:nth-child(2)
   .project-details:hover,
 .projects-container
@@ -454,6 +461,10 @@ nav .nav-items {
 .projects-container
   .project-bar
   .project-dots:nth-child(6)
+  .project-details:hover,
+.projects-container
+  .project-bar
+  .project-dots:nth-last-child(1)
   .project-details:hover,
 .projects-container
   .project-bar
@@ -624,10 +635,6 @@ nav .nav-items {
     display: block;
   }
 
-  .nav-con {
-    /* display:none; */
-  }
-
   .home .home-con {
     left: -60px;
   }
@@ -652,9 +659,10 @@ nav .nav-items {
   .projects-container .project-bar .project-dots:nth-child(2) .project-details,
   .projects-container .project-bar .project-dots:nth-child(14) .project-details,
   .projects-container .project-bar .project-dots:nth-child(6) .project-details,
+  .projects-container .project-bar .project-dots:nth-child(10) .project-details,
   .projects-container
     .project-bar
-    .project-dots:nth-child(10)
+    .project-dots:nth-last-child(1)
     .project-details {
     left: 40px;
   }
@@ -673,6 +681,10 @@ nav .nav-items {
   .projects-container
     .project-bar
     .project-dots:nth-child(10)
+    .project-details:hover,
+  .projects-container
+    .project-bar
+    .project-dots:nth-last-child(1)
     .project-details:hover {
     left: 20px;
   }
@@ -705,6 +717,7 @@ nav .nav-items {
 
 @media (max-width: 550px) {
   .skills {
+    width: 90vw;
     padding: 20px;
     gap: 30px;
   }
@@ -770,6 +783,9 @@ nav .nav-items {
 }
 
 @media (max-width: 400px) {
+  .skills {
+    width: 100vw;
+  }
   .foot-container .form-container {
     position: relative;
     width: 250px;

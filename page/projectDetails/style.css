@@ -59,7 +59,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 
 .card:hover {
@@ -133,7 +133,9 @@ body {
     #ee609c 100%
   );
 }
-
+.card:nth-child(9) .card-image {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
 .card:hover .card-image {
   background-size: 200%;
 }

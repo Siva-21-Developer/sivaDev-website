@@ -1,29 +1,29 @@
-let cards = document.querySelectorAll('.card');
+let cards = document.querySelectorAll(".card");
 let closeButtons = document.querySelectorAll(".cross");
 
 cards.forEach((item) => {
-    item.addEventListener("click", () => {
-        // Set display to none for all cards except the clicked one
-        cards.forEach((card) => {
-            if (card !== item) {
-                card.style.display = "none";
-            }
-        });
-        // Add 'active' class to the clicked card
-        item.classList.add("active");
+  item.addEventListener("click", () => {
+    // Set display to none for all cards except the clicked one
+    cards.forEach((card) => {
+      if (card !== item) {
+        card.style.display = "none";
+      }
     });
+    // Add 'active' class to the clicked card
+    item.classList.add("active");
+  });
 });
 
 closeButtons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-        event.stopPropagation();  // Prevent the click from propagating to the card
-        let activeCard = button.closest(".card");
-        activeCard.classList.remove("active");
-        // Set display back to block for all cards
-        cards.forEach((card) => {
-            card.style.display = "flex";
-        });
+  button.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the card
+    let activeCard = button.closest(".card");
+    activeCard.classList.remove("active");
+    // Set display back to block for all cards
+    cards.forEach((card) => {
+      card.style.display = "flex";
     });
+  });
 });
 
 // let cards = document.querySelectorAll('.card');
@@ -41,7 +41,7 @@ closeButtons.forEach((button) => {
 //         button.closest(".card").classList.remove("active");
 //     });
 // });
-document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 function ctrlShiftKey(e, keyCode) {
   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
@@ -50,10 +50,10 @@ function ctrlShiftKey(e, keyCode) {
 document.onkeydown = (e) => {
   if (
     event.keyCode === 123 ||
-    ctrlShiftKey(e, 'I') ||
-    ctrlShiftKey(e, 'J') ||
-    ctrlShiftKey(e, 'C') ||
-    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+    ctrlShiftKey(e, "I") ||
+    ctrlShiftKey(e, "J") ||
+    ctrlShiftKey(e, "C") ||
+    (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
   )
     return false;
 };
