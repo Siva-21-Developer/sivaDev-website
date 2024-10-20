@@ -9,6 +9,18 @@ let icon = document.getElementById("icon");
 let HomeScreen = document.querySelector(".home");
 let skilsper = document.querySelectorAll(".skill-percentage");
 
+window.addEventListener("load", () => {
+  document.querySelector(".nav").classList.add("active");
+  document.querySelector(".home-title").classList.add("active");
+  document.querySelector(".home-titles").classList.add("active");
+  document.querySelector(".home-title-1").classList.add("active");
+  document.querySelector(".profilecon").classList.add("active");
+  let icons = document.querySelectorAll(".icon-con");
+  icons.forEach((items) => {
+    items.classList.add("active");
+  });
+});
+
 window.addEventListener("scroll", () => {
   let scroll = window.scrollY;
 
@@ -49,22 +61,22 @@ bars.addEventListener("click", () => {
   }
 });
 
-document.addEventListener("contextmenu", (e) => e.preventDefault());
+// document.addEventListener("contextmenu", (e) => e.preventDefault());
 
-function ctrlShiftKey(e, keyCode) {
-  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-}
+// function ctrlShiftKey(e, keyCode) {
+//   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+// }
 
-document.onkeydown = (e) => {
-  if (
-    event.keyCode === 123 ||
-    ctrlShiftKey(e, "I") ||
-    ctrlShiftKey(e, "J") ||
-    ctrlShiftKey(e, "C") ||
-    (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
-  )
-    return false;
-};
+// document.onkeydown = (e) => {
+//   if (
+//     event.keyCode === 123 ||
+//     ctrlShiftKey(e, "I") ||
+//     ctrlShiftKey(e, "J") ||
+//     ctrlShiftKey(e, "C") ||
+//     (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
+//   )
+//     return false;
+// };
 
 document
   .getElementById("contact-form")
@@ -97,7 +109,7 @@ document
 
 let card = document.querySelector(".home-con");
 document.addEventListener("mousemove", function (e) {
-  let xAxis = (window.innerWidth / 50 - e.pageX) / 30;
-  let yAxis = (window.innerHeight / 50 - e.pageY) / 50;
+  let xAxis = (window.innerWidth / 50 - e.pageX) / 80;
+  let yAxis = (window.innerHeight / 50 - e.pageY) / 80;
   card.style.transform = `rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`;
 });

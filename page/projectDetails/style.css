@@ -252,3 +252,7 @@ ul {
     font-size: 15px;
   }
 }
+.card-title a {
+  text-decoration: none;
+  color: #000;
+}

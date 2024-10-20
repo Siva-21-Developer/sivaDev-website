@@ -33,8 +33,12 @@
     </nav>
     <section class="home section" id="Home">
       <div class="home-con">
-        <h1 class="home-title">Hello, Im</h1>
+        <h1 class="home-title">I'm</h1>
         <h1 class="home-titles">Siva</h1>
+        <h1 class="home-title-1">software developer</h1>
+      </div>
+      <div class="profilecon">
+        <img src="./assets/2.pngcopy.png" alt="" srcset="" />
       </div>
       <div class="icons">
         <div class="icon-con">
@@ -186,7 +190,7 @@
           <div class="projects-bars"></div>
           <div class="project-dots">
             <div class="project-details">
-              <h1>Chatting Application Using Flutter and FireBase</h1>
+              <h1>Flipkart Clone Using React-Js and MongoDB</h1>
             </div>
           </div>
 
@@ -214,7 +218,7 @@
           <div class="projects-bars"></div>
           <div class="project-dots">
             <div class="project-details">
-              <h1>Financial Application Using SalesFroce</h1>
+              <h1>Chatting Application Using Flutter and FireBase</h1>
             </div>
           </div>
 
@@ -238,15 +242,80 @@
               <h1>Dynamic WebApp Using Django</h1>
             </div>
           </div>
-
-          <div class="projects-bars"></div>
-          <div class="project-dots">
-            <div class="project-details">
-              <h1>Chatting Application Using Flutter and FireBase</h1>
-            </div>
-          </div>
         </div>
       </div>
+    </div>
+
+    <div class="works">
+      <aside>
+        <div class="works-title">My Works</div>
+      </aside>
+      <section class="work-con">
+        <div class="workscard">
+          <div>
+            <h1>01</h1>
+            <h2>Financial Application</h2>
+          </div>
+          <div class="details">
+            <h4>Details</h4>
+            <p>
+              The Fin App project aims to enhance and simplify the procurement
+              and invoicing processes for businesses. This comprehensive
+              solution will integrate seamlessly to enable efficient work order
+              creation, purchase order management, and invoice generation. Under
+              the leadership of the Project Manager & Lead and Sales admin, our
+              multidisciplinary team will leverage advanced technologies to
+              develop a user-friendly platform.
+              <br />
+              <a href="./projectDetails/index.html" class="worklink">
+                More Details..
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="workscard">
+          <div>
+            <h1>02</h1>
+            <h2>Photography Portfolio Website</h2>
+          </div>
+          <div class="details">
+            <h4>Details</h4>
+            <p>
+              The Macro Photography Portfolio Website is a comprehensive online
+              platform designed to showcase the intricate and captivating world
+              of macro photography. This website aims to present high-quality,
+              close-up images that reveal the minute details of subjects such as
+              insects, flowers, textures, and everyday objects, highlighting
+              their beauty and complexity. <br />
+              <a href="./projectDetails/index.html" class="worklink">
+                More Details..
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="workscard">
+          <div>
+            <h1>03</h1>
+            <h2>Finance Application</h2>
+          </div>
+          <div class="details">
+            <h4>Details</h4>
+            <p>
+              The MH Finance application is a cloud-based financial management
+              system developed using Salesforce. It is designed to streamline
+              and automate financial processes, ensuring transparency,
+              efficiency, and real-time insights for the finance team. The
+              application leverages the power of Salesforce CRM, along with
+              Lightning Web Components (LWC), to deliver a comprehensive
+              solution for managing customer financial data, transactions, and
+              reporting. <br />
+              <a href="./projectDetails/index.html" class="worklink">
+                More Details..
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
 
     <section class="resume-wrapper section" id="Resume">
@@ -402,7 +471,7 @@
 
   <script>
     ScrollReveal({
-      reset: true,
+      reset: false,
       distance: "50px",
     });
 
@@ -416,5 +485,7 @@
     ScrollReveal().reveal(".cer-card");
     ScrollReveal().reveal(".foot-content");
     ScrollReveal().reveal(".form-container");
+    ScrollReveal().reveal(".works-title");
+    ScrollReveal().reveal(".workscard");
   </script>
 </html>
